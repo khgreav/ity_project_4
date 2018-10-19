@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[text={170mm,240mm},left=20mm,top=30mm]{geometry}
+\usepackage[czech]{babel}
+\usepackage[unicode]{hyperref}
+\usepackage{times}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\Huge \textsc{Vysoké učení technické v Brně\\[0,3em]{\huge Fakulta informačních technologií}}}\\
+\vspace{\stretch{0.382}}
+{{\LARGE Typografie a publikování - 4. projekt}\\[0,4em]{\Huge Bibliografické citace}}\\
+\vspace{\stretch{0.618}}
+\end{center}
+{\Large \today \hfill Karel Hanák}
+\end{titlepage}
+
+\section{Typografie}
+\subsection{Úvod}
+Johannes Gutenberg je považován za otce typografie od roku 1440 kdy vynalezl knihtisk. \cite{haley} Typografie se stala neodmyslitelnou součástí tvorby a úpravy textu. Základem všeho je však písmo. 
+
+\subsection{Písmo}
+První písmo se datuje k 4. tisíciletí př.n.l kdy se poprvé vyskytlo písmo klínové. Mezi další historicky významná písma patří také egyptské hieroglifické, hieratické a démotické písmo. \cite{citarna} Písmo má mnoho důležitých vlastností. Patří mezi ně například anatomie, rodina, řez, druh a stupeň písma. \cite{scribus}
+
+\subsection{Principy dobrého dokumentu}
+Cílem každého dokumentu by mělo být předat informace. Dobře vysázený dokument se lépe čte a informace v něm se tak spíše dostanou ke čtenáři. Dobrý dokument je charakterizován informacemi, strukturou, jednotností a estetikou. \cite{cstug} V jedné typografické studii se poslaly životopisy s různými styly vysázení k ohodnocení a bylo zjištěno, že styly které se zdály být vhodné pro dané odvětví působily lépe. \cite{pov} Každý dokument by měl mít svůj osobitý styl, výběr správného fontu doprovází i vhodně zvolené rozvržení stránky. \cite{rmets}
+
+\subsection{\TeX}
+Autorem programu \TeX je Donald Ervin Knuth, profesor na Standfordské univerzitě.
+\TeX byl navržen tak aby fungoval nezávisle na operačním systému, je to tedy vhodný nástroj pro sazbu dokumentů díky multiplatformnosti a preciznosti. \cite{beranova}
+
+\subsection{Nádstavba \LaTeX}
+\LaTeX je software pro sázení dokumentů, nebo také značkovací jazyk pro dokumenty. Je to nádstavba sázecího programu \TeX. \LaTeX se používá převážně k sázení vědeckých, technických a odborných dokumentů. \cite{kottwitz}
+
+\subsection{Jak to funguje}
+Nejprve je třeba vytvořit zdrojový soubor *.tex, pokud v něm není chyba tak se pomocí překladače tex či latex přeloží do souboru *.dvi, tento soubor je dále potřeba převést do formátu *.pdf. Alternativně je možno použít překladače pdftex či pdflatex, v mnoha věcech jsou výhodnější, ale výsledné soubory jsou větší. \cite{bojko}
+
+\subsection{Doporučené editory}
+Mezi nejpopulárnější offline editory patří TeXMaker, TeXstudio a TeXworks. Dále existuje velmi populární online editor ShareLaTeX a pro milovníky Vim-u se najde i LaTeX-suite balíček pro Vim. Všechny zmíněné offline editory jsou multiplatformní. \cite{beebom}
+
+\newpage
+\renewcommand{\refname}{Použitá literatura:}
+\bibliographystyle{czechiso}
+\bibliography{sources}
+\end{document}
